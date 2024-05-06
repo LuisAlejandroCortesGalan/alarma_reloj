@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <form id="formulario">
+        <fieldset>
+            <legend>
+                <h1>Programa tu alarma</h1>
+                <div>
+                <label for="hora">Hora</label><br>
+                <input type="number" name="hora" id="hora" min="0" max="60"><br>
+                </div>
+                <div>
+                <label for="minuto">Minuto</label><br>
+                <input type="number" name="minuto" id="minuto" min="0" max="60"><br>
+                </div>
+                <div>
+                <label for="segundo">Segundo</label><br>
+                <input type="number" name="segundo" id="segundo" min="0" max="60"><br>
+            </div>
+                <div class="div-button">
+                    <button type="submit">Colocar alarma</button>
+                    <button onclick="pararAlarma()">Parar alarma</button>
+                </div>
+            </legend>
+        </fieldset>
+    </form>
+    <div class="container">
+        <p id="time"></p>
+    </div>
+    <!-- <p id="time2"></p> -->
+    <audio src="assets/biohazard_alarm.mp3" id="alarm"></audio>
+    <script src="aleatorio.js">
+    </script>
+</body>
+</html>
